@@ -2,13 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pandas as pd
 
-# quary = input("Enter Product which you find: ")
+quary = input("Enter Product which you find: ")
 
 # Initialize the WebDriver with the specified options
 driver = webdriver.Chrome()
 
 # Go to the Flipkart search page
-quary = 'laptop'
+# quary = 'laptop'
 url = f"https://www.flipkart.com/search?q={quary}&as=on&as-show=on&otracker=AS_Query_TrendingAutoSuggest_1_0_na_na_na&otracker1=AS_Query_TrendingAutoSuggest_1_0_na_na_na&as-pos=1&as-type=HISTORY&suggestionId=mobiles&requestId=c01419dc-d942-435b-95af-9bbb06d559bf"
 driver.get(url)
 print(url)
